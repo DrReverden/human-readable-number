@@ -12,6 +12,8 @@ module.exports = function toReadable (number) {
     splitNumber = splitNumber.reverse();
 
     switch(digit) {
+        case 0:
+            return 'zero';
         case 10:
             return 'ten';
         case 11:
