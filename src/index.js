@@ -1,13 +1,13 @@
 module.exports = function toReadable (number) {
-  const digit = n;
+  const digit = number;
     const units = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
     const dozens = ['ten', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
     const tens = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifthteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
 
     let splitNumber = [];
-    while(n) {
-        splitNumber.push(n % 10);
-        n = Math.floor(n / 10);
+    while(number) {
+        splitNumber.push(number % 10);
+        number = Math.floor(number / 10);
     }
     splitNumber = splitNumber.reverse();
 
