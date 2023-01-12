@@ -45,7 +45,7 @@ module.exports = function toReadable (number) {
             return `${units[splitNumber[0] - 1]} hundred ${dozens[splitNumber[1] - 1]} ${units[splitNumber[2] - 1]}`
         }
     }
+    let m = toReaddable();
+    let arr = m.split(' ').filter(item => item !== 'undefined').join(' ');
+    console.log(arr)
 }
-let m = toReaddable();
-let arr = m.split(' ').filter(item => item !== 'undefined').join(' ');
-console.log(arr)
