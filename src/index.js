@@ -1,6 +1,6 @@
-let m = toReaddable();
-    let arr = m.split(' ').filter(item => item !== 'undefined').join(' ');
-    console.log(arr)
+// let m = toReaddable();
+//     let arr = m.split(' ').filter(item => item !== 'undefined').join(' ');
+//     console.log(arr)
 
 module.exports = function toReadable (number) {
   const digit = number;
