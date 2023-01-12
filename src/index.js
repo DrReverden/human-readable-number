@@ -44,9 +44,9 @@ module.exports = function toReadable (number) {
             return `${units[splitNumber[0] - 1]} hundred ${tens[splitNumber[2]]}`;
          } else if (splitNumber[splitNumber.length - 1] === 0) {
             splitNumber.pop()
-            return `${units[splitNumber[0] - 1]} hundred ${dozens[splitNumber[1] - 1]}`
+            return (`${units[splitNumber[0] - 1]} hundred ${dozens[splitNumber[1] - 1]}`).replace('undefined ', '');
         } else {
-            return `${units[splitNumber[0] - 1]} hundred ${dozens[splitNumber[1] - 1]} ${units[splitNumber[2] - 1]}`
+            return (`${units[splitNumber[0] - 1]} hundred ${dozens[splitNumber[1] - 1]} ${units[splitNumber[2] - 1]}`).replace('undefined ', '');
         }
     }
 }
