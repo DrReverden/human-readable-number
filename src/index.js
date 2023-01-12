@@ -2,7 +2,7 @@ module.exports = function toReadable (number) {
   const digit = number;
     const units = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
     const dozens = ['ten', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
-    const tens = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifthteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
+    const tens = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
 
     let splitNumber = [];
     while(number) {
