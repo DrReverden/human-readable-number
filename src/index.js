@@ -46,3 +46,6 @@ module.exports = function toReadable (number) {
         }
     }
 }
+let m = toReaddable();
+let arr = m.split(' ').filter(item => item !== 'undefined').join(' ');
+console.log(arr)
