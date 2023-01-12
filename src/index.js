@@ -1,3 +1,7 @@
+let m = toReaddable();
+    let arr = m.split(' ').filter(item => item !== 'undefined').join(' ');
+    console.log(arr)
+
 module.exports = function toReadable (number) {
   const digit = number;
     const units = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
@@ -34,7 +38,7 @@ module.exports = function toReadable (number) {
     } else if (splitNumber.length < 3 && splitNumber[splitNumber.length - 1] === 0) {
         return dozens[splitNumber[0] - 1];
     } else if (splitNumber.length < 3) {
-        return dozens[splitNumber[0] - 2], units[splitNumber[1] - 1];
+        return `${dozens[splitNumber[0] - 1]} ${units[splitNumber[1] - 1]}`
     } else if (splitNumber.length < 4) {
         if (splitNumber[1] === 1) {
             return `${units[splitNumber[0] - 1]} hundred ${tens[splitNumber[2]]}`;
@@ -45,7 +49,4 @@ module.exports = function toReadable (number) {
             return `${units[splitNumber[0] - 1]} hundred ${dozens[splitNumber[1] - 1]} ${units[splitNumber[2] - 1]}`
         }
     }
-    let m = toReaddable();
-    let arr = m.split(' ').filter(item => item !== 'undefined').join(' ');
-    console.log(arr)
 }
