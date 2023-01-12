@@ -35,12 +35,12 @@ module.exports = function toReadable (number) {
         return dozens[splitNumber[0] - 2], units[splitNumber[1] - 1];
     } else if (splitNumber.length < 4) {
         if (splitNumber[1] === 1) {
-            return `${units[splitNumber[0] - 1]} hungred ${tens[splitNumber[2]]}`;
+            return `${units[splitNumber[0] - 1]} hundred ${tens[splitNumber[2]]}`;
          } else if (splitNumber[splitNumber.length - 1] === 0) {
             splitNumber.pop()
-            return `${units[splitNumber[0] - 1]} hungred ${dozens[splitNumber[1] - 1]}`
+            return `${units[splitNumber[0] - 1]} hundred ${dozens[splitNumber[1] - 1]}`
         } else {
-            return `${units[splitNumber[0] - 1]} hungred ${dozens[splitNumber[1] - 1]} ${units[splitNumber[2] - 1]}`
+            return `${units[splitNumber[0] - 1]} hundred ${dozens[splitNumber[1] - 1]} ${units[splitNumber[2] - 1]}`
         }
     }
 }
